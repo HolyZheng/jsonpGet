@@ -9,7 +9,7 @@ $ npm install jsonp-get
 ### jsonpGet(url, params?, callback?)
 - `url` (`string`) 要请求的地址
 - `params` (`object`) 参数，组成url的参数部分如：{a: 1, b: 2} 转为 ?a=1&b=2
-- `callback` (`string`) 前后端约定的字段名，默认值为callback，用来携带回调。
+- `callback` (`string`) 前后端约定的字段名，默认值为callback（通常为此值），用来携带回调。
 
 ### demo
 比如，向[豆瓣公开api](https://developers.douban.com/wiki/?title=movie_v2)发送请求。
@@ -35,6 +35,6 @@ jsonpGet(url, params)
 
 /* Console
 *
-*  {count: 20, start: 0, total: 200, subjects: Array(20), title: "带有标签 "喜剧*  " 的条目"}
+*  {count: 20, start: 0, total: 200, subjects: Array(20), title: "带有标签 "喜剧" 的条目"}
 */
 ```
