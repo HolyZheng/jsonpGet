@@ -1,4 +1,4 @@
-[中文Chinese](https://github.com/HolyZheng/jsonpGet#chinese)
+[中文教程Chinese](https://github.com/HolyZheng/jsonpGet#chinese)
 
 
 [![NPM](https://nodei.co/npm/jsonp-get.png?mini=true)](https://nodei.co/npm/jsonp-get/)
