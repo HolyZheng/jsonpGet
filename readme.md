@@ -14,10 +14,10 @@ $ npm install jsonp-get
 ### demo
 比如，向[豆瓣公开api](https://developers.douban.com/wiki/?title=movie_v2)发送请求。
 ```js
+
 let url = 'https://api.douban.com/v2/movie/search'
-let params = {
-  tag: '喜剧'
-}
+let params = { tag: '喜剧' }
+
 jsonpGet(url, params)
   .then(res => {
     console.log(res)
@@ -28,7 +28,7 @@ jsonpGet(url, params)
 
 /* Network
 *
-* Request URL: https://api.douban.com/v2/movie/search?tag=%E5%96%9C%E5%89%A7&* * callback=myback
+* Request URL: https://api.douban.com/v2/movie/search?tag=%E5%96%9C%E5%89%A7&callback=myback
 * Request Method: GET
 * Status Code: 200 OK
 */
