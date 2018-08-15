@@ -1,5 +1,5 @@
 [中文Chinese](https://github.com/HolyZheng/jsonGet#Chinese)
-![jsonp-get npm]("https://nodei.co/npm/jsonp-get.png?mini=true")
+[![NPM](https://nodei.co/npm/jsonp-get.png?mini=true)](https://nodei.co/npm/jsonp-get/)
 ## jsonGet
 A simple lib for Jsonp Cross-domain Request, it returns a promise
 ## Installation
