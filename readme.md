@@ -2,7 +2,7 @@
 
 
 [![NPM](https://nodei.co/npm/jsonp-get.png?mini=true)](https://nodei.co/npm/jsonp-get/)
-## jsonGet
+## jsonpGet
 A simple lib for Jsonp Cross-domain Request, it returns a promise
 ## Installation
 install by using npm:
