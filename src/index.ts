@@ -21,7 +21,7 @@ function jsonpGet (url: string, params?: params, callback = 'callback') {
       delete window['myback']
     }
 
-    function clearScript () {
+    function cleanScript () {
       let script: HTMLElement = document.getElementById('for-jsonp')
       let parentNode: Node = script.parentNode
       parentNode.removeChild(script)
@@ -35,12 +35,12 @@ function jsonpGet (url: string, params?: params, callback = 'callback') {
     script.src = encodeURI(completeUrl)
     script.id = 'for-jsonp'
     script.onload = () => {
-      clearScript()
+      cleanScript()
       resolve(window['jsonpData'])
       delete window['jsonpData']
     }
     script.onerror = (e: any) => {
-      clearScript()
+      cleanScript()
       let errorText: string = `Your jsonp request to ${e.target.src} is fail, please check your url or params again.`
       reject(errorText)
     }
