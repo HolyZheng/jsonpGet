@@ -2,7 +2,7 @@ interface params {
   [propName: string]: string | number
 }
 
-function jsonpget (url: string, params?: params, callback = 'callback') {
+function jsonpGet (url: string, params?: params, callback = 'callback') {
   return new Promise((resolve, reject) => {
     // get our complete url
     let completeUrl: string;
@@ -51,4 +51,4 @@ function jsonpget (url: string, params?: params, callback = 'callback') {
   })
 }
 
-export default jsonpget
+export default jsonpGet
