@@ -1,4 +1,5 @@
 [中文Chinese](https://github.com/HolyZheng/jsonGet#Chinese)
+![jsonp-get npm]("https://nodei.co/npm/jsonp-get.png?mini=true")
 ## jsonGet
 A simple lib for Jsonp Cross-domain Request, it returns a promise
 ## Installation
@@ -9,8 +10,8 @@ $ npm install jsonp-get
 ## Usage
 ### jsonpGet(url, params?, callback?)
 - `url` (`string`), the address we want to visit
-- `params` (`object`), for example, {a: 1, b:2}, it will make up the parameters of url, like '?a=1&b=2'
-- `callback` (`string`), a key, used to pass callback function, its default value is 'callback'
+- `params` (`object`), for example, `{a: 1, b:2}`, it will make up the `parameters` of url, like `?a=1&b=2`
+- `callback` (`string`), a key, used to pass callback function, its default value is `callback`
 ### demo
 get data from [douban api](https://developers.douban.com/wiki/?title=movie_v2)。
 ```js
@@ -51,7 +52,7 @@ $ npm install jsonp-get
 ## 用法
 ### jsonpGet(url, params?, callback?)
 - `url` (`string`) 要请求的地址
-- `params` (`object`) 参数，组成url的参数部分如：{a: 1, b: 2} 转为 ?a=1&b=2
+- `params` (`object`) 参数，组成`url`的参数部分如：`{a: 1, b: 2}` 转为 `?a=1&b=2`
 - `callback` (`string`) 前后端约定的字段名，默认值为callback（通常为此值），用来携带回调。
 
 ### demo
