@@ -17,7 +17,7 @@ $ npm install jsonp-get
 ### demo
 get data from [douban api](https://developers.douban.com/wiki/?title=movie_v2)。
 ```js
-import jsonpGet from 'json-get'
+import jsonpGet from 'jsonp-get'
 
 let url = 'https://api.douban.com/v2/movie/search'
 let params = { tag: '喜剧' }
@@ -60,7 +60,7 @@ $ npm install jsonp-get
 ### demo
 比如，向[豆瓣公开api](https://developers.douban.com/wiki/?title=movie_v2)发送请求。
 ```js
-import jsonpGet from 'json-get'
+import jsonpGet from 'jsonp-get'
 
 let url = 'https://api.douban.com/v2/movie/search'
 let params = { tag: '喜剧' }
