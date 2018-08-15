@@ -14,6 +14,7 @@ $ npm install jsonp-get
 ### demo
 比如，向[豆瓣公开api](https://developers.douban.com/wiki/?title=movie_v2)发送请求。
 ```js
+import jsonGet from 'json-get'
 
 let url = 'https://api.douban.com/v2/movie/search'
 let params = { tag: '喜剧' }
