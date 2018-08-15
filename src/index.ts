@@ -19,7 +19,6 @@ function jsonpGet (url: string, params?: params, callback = 'callback') {
     function myback (data: any) {
       window['jsonpData'] = data
       delete window['myback']
-      console.log(new Date(), 'myback')
     }
 
     function clearScript () {
@@ -39,7 +38,6 @@ function jsonpGet (url: string, params?: params, callback = 'callback') {
       clearScript()
       resolve(window['jsonpData'])
       delete window['jsonpData']
-      console.log(new Date(), window['jsonpData'])
     }
     script.onerror = (e: any) => {
       clearScript()

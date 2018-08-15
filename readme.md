@@ -1,1 +1,40 @@
 ## jsonpGet
+简单易用的jsonp跨域请求插件，返回一个promise。
+## 安装
+通过npm进行安装:
+```
+$ npm install jsonp-get
+```
+## 用法
+### jsonpGet(url, params?, callback?)
+- `url` (`string`) 要请求的地址
+- `params` (`object`) 参数，组成url的参数部分如：{a: 1, b: 2} 转为 ?a=1&b=2
+- `callback` (`string`) 前后端约定的字段名，默认值为callback，用来携带回调。
+
+### demo
+比如，向[豆瓣公开api](https://developers.douban.com/wiki/?title=movie_v2)发送请求。
+```js
+let url = 'https://api.douban.com/v2/movie/search'
+let params = {
+  tag: '喜剧'
+}
+jsonpGet(url, params)
+  .then(res => {
+    console.log(res)
+  })
+  .catch(err => {
+    console.log(err)
+  })
+
+/* Network
+*
+* Request URL: https://api.douban.com/v2/movie/search?tag=%E5%96%9C%E5%89%A7&* * callback=myback
+* Request Method: GET
+* Status Code: 200 OK
+*/
+
+/* Console
+*
+*  {count: 20, start: 0, total: 200, subjects: Array(20), title: "带有标签 "喜剧*  " 的条目"}
+*/
+```
