@@ -1,9 +1,9 @@
 {
   "name": "jsonp-get",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A tool for jsonp request.",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": ["dist","readme.md"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
