@@ -3,6 +3,9 @@
 
 [![NPM](https://nodei.co/npm/jsonp-get.png?mini=true)](https://nodei.co/npm/jsonp-get/)
 ## jsonpGet
+![version](https://img.shields.io/badge/jsonpGet-v0.0.5-green.svg)
+![license](https://img.shields.io/badge/License-MIT-blue.svg)
+
 A simple lib for Jsonp Cross-domain Request, it returns a promise
 ## Installation
 install by using npm:
